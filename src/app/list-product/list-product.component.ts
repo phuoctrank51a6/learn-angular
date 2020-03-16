@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../Product';
+import { data } from '../MockProduct';
 
 @Component({
   selector: 'app-list-product',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-product.component.css']
 })
 export class ListProductComponent implements OnInit {
+  products = data;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {}
+  selected: Product;
+  removeIttem(id){
+    console.log(id);
+    this.products = this.products.filter(product => product.id != id);
   }
-
+  detailProduct(product){
+    this.selected =product;
+  }
 }
