@@ -9,9 +9,4 @@ import { data } from './MockProduct';
 })
 export class AppComponent  {
   name = 'Angular';
-  products = data;
-  delProduct(id){
-    // console.log(id);
-    this.products = this.products.filter(product => product.id != id)
-  }
 }

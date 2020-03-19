@@ -7,7 +7,7 @@ import { Product } from "./Product";
       price: 25.25,
       desc: "Nội dung mô tả sản phẩm",
       img:
-        "https://i.pinimg.com/564x/06/57/03/0657030ca72a2cb0c8546e02d0cb30a0.jpg",
+        "https://dummyimage.com/300x300/343a40/fff",
       status: true
     },
     {
@@ -16,7 +16,7 @@ import { Product } from "./Product";
       price: 25.522,
       desc: "Nội dung mô tả sản phẩm",
       img:
-        "https://i.pinimg.com/564x/06/57/03/0657030ca72a2cb0c8546e02d0cb30a0.jpg",
+        "https://dummyimage.com/300x300/343a40/fff",
       status: true
     },
     {
@@ -25,7 +25,7 @@ import { Product } from "./Product";
       price: 25.88,
       desc: "Nội dung mô tả sản phẩm",
       img:
-        "https://i.pinimg.com/564x/06/57/03/0657030ca72a2cb0c8546e02d0cb30a0.jpg",
+        "https://dummyimage.com/300x300/343a40/fff",
       status: true
     }
   ];
