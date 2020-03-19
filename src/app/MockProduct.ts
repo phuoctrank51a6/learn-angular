@@ -27,5 +27,68 @@ import { Product } from "./Product";
       img:
         "https://dummyimage.com/300x300/343a40/fff",
       status: true
+    },
+    {
+      id: 4,
+      name: "item 4",
+      price: 25.25,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
+    },
+    {
+      id: 5,
+      name: "item 5",
+      price: 25.522,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
+    },
+    {
+      id: 6,
+      name: "item 6",
+      price: 25.88,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
+    },
+    {
+      id: 7,
+      name: "item 7",
+      price: 25.25,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
+    },
+    {
+      id: 8,
+      name: "item 8",
+      price: 25.522,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
+    },
+    {
+      id: 9,
+      name: "item 9",
+      price: 25.88,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
+    },
+    {
+      id: 10,
+      name: "item 10",
+      price: 25.88,
+      desc: "Nội dung mô tả sản phẩm",
+      img:
+        "https://dummyimage.com/300x300/343a40/fff",
+      status: true
     }
   ];
