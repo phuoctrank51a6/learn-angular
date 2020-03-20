@@ -13,6 +13,7 @@ export class ListProductComponent implements OnInit {
 
   ngOnInit(): void {}
   selected: Product;
+  
   removeIttem(id){
     console.log(id);
     this.products = this.products.filter(product => product.id != id);
