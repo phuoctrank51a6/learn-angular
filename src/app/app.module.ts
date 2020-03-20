@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
@@ -13,7 +14,7 @@ import { ProductService } from './product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
   declarations: [ AppComponent, HelloComponent, SlideshowComponent, CategoryComponent, ListProductComponent, ItemProductComponent, ProductManagerComponent, ProductAddComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
