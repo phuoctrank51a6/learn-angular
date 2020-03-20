@@ -6,11 +6,11 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 
 
 const routes: Routes = [
-  { path: '**', component: ListProductComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  // { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: ListProductComponent},
   { path: 'product-manager', component: ProductManagerComponent},
-  { path: 'add-product' ,component: ProductAddComponent}
+  { path: 'add-product' ,component: ProductAddComponent},
+  { path: '**', component: ListProductComponent},
 ];
 
 @NgModule({
