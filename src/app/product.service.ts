@@ -27,7 +27,7 @@ export class ProductService {
     // console.log(length);
     let fakeObj = {id: length, ...product};
     this.products.push(fakeObj);
-    console.log(this.products);
+    // console.log(this.products);
   }
 
 }
