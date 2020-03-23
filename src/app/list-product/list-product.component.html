@@ -18,7 +18,9 @@
                 <!-- cấu trúc event
                 - (event-name)="method($event) -->
                 <button class="btn btn-primary">Mua hàng</button>
-                <button class="btn btn-warning" (click)="detailProduct(product)">Chi tiết</button>
+                <a class="btn btn-success" [routerLink]="['/detail-product', product.id]">
+                  Chi tiết
+                </a>
                 <button class="btn btn-danger" (click)="removeIttem(product.id)">Xóa</button>
                 <!-- cách 1 -->
                 <!-- <input type="text " (keyup)="changeTitle($event) "> -->
