@@ -20,8 +20,12 @@
                 <td> {{ product.desc }} </td>
                 <td><img height="100px" src="{{product.img}}" alt=""></td>
                 <td>
-                  <button class="btn btn-info" (click)="detailProduct(product)">Chi tiết</button>
-                    <button class="btn btn-warning">Edit</button>
+                <a class="btn btn-info" [routerLink]="['/detail-product', product.id]">
+                  Chi tiết
+                </a>
+                <a class="btn btn-warning" [routerLink]="['/edit-product', product.id]">
+                  Sửa
+                </a>
                     <button class="btn btn-danger" (click)="delProduct(product.id)">Delete</button>
                 </td>
             </tr>

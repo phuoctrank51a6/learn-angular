@@ -17,8 +17,15 @@ export class ProductService {
     return this.products = this.products.filter(product => product.id != id);
     // console.log(this.products);
   }
-  detailProduct(product){
-    return this.detail =product;
+  detailProduct(id: number){
+    // console.log(id);
+    const product = this.products.find(product => product.id == id);
+    // console.log(product);
+    if (product) {
+      return product;
+    } else {
+      throw Error('Not Found');
+    }
   }
   
   addProduct(product){
@@ -28,6 +35,16 @@ export class ProductService {
     let fakeObj = {id: length, ...product};
     this.products.push(fakeObj);
     // console.log(this.products);
+  }
+  updateProduct(product){
+    // console.log(product);
+    for(let i = 0;i < this.products.length; i++){
+      if(this.products[i].id == product.id){
+        // console.log(this.products[i]);
+        this.products[i]=product;
+      }
+    }
+    console.log(this.products)
   }
 
 }
