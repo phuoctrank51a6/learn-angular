@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,10 +14,11 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { ProductService } from './product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
-import { DetailProductComponent } from './detail-product/detail-product.component';
+import { DetailProductComponent } from './detail-product/detail-product.component';import { from } from 'rxjs';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, SlideshowComponent, CategoryComponent, ListProductComponent, ItemProductComponent, ProductManagerComponent, ProductAddComponent, EditProductComponent, DetailProductComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

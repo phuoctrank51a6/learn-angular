@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../Product';
 import { ProductService } from '../product.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-manager',
@@ -12,7 +13,9 @@ export class ProductManagerComponent implements OnInit {
   products : Product[];
 
   constructor(
-    private productsService : ProductService
+    private productService : ProductService,
+    private route: ActivatedRoute,
+    private router: Router,
     ) { }
 
   ngOnInit() {
@@ -20,16 +23,23 @@ export class ProductManagerComponent implements OnInit {
   }
   
   getProducts(){
-    return this.products = this.productsService.getProducts();
+    console.log('hello')
+    // return this.products = this.productService.getProducts();
+    // this.productService.getProducts().subscribe(data => { console.log(data)
+    //   // this.products= data
+    // })
   }
 
   delProduct(id){
     // console.log(id);
     // this.products = this.products.filter(product => product.id != id)
-    return this.products = this.productsService.removeProduct(id);
+    // return this.products = this.productsService.removeProduct(id);
+    this.productService.removeProduct(id).subscribe(() => this.router.navigateByUrl('/product-manager'));
   }
   detailProduct(product){
-    return this.detail = this.productsService.detailProduct(product);
+    // return this.detail = this.productsService.detailProduct(product);
+    this.productService.getProducts().subscribe(data => {
+      this.products= data
+  })
   }
-
 }
