@@ -7,6 +7,7 @@
                 <th>Price</th>
                 <th>Desc</th>
                 <th>image</th>
+                <th>Trạng thái</th>
                 <th>
                   <a class="btn btn-primary" href="/add-product">Thêm</a>
                 </th>
@@ -19,6 +20,7 @@
                 <td> $ {{ product.price }}</td>
                 <td> {{ product.desc }} </td>
                 <td><img height="100px" src="{{product.img}}" alt=""></td>
+                <td>{{(product.status == true)? "Còn hàng" : "Hết hàng"}}</td>
                 <td>
                 <a class="btn btn-info" [routerLink]="['/detail-product', product.id]">
                   Chi tiết
