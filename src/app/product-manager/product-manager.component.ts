@@ -25,9 +25,10 @@ export class ProductManagerComponent implements OnInit {
   getProducts(){
     console.log('hello')
     // return this.products = this.productService.getProducts();
-    // this.productService.getProducts().subscribe(data => { console.log(data)
-    //   // this.products= data
-    // })
+    this.productService.getProducts().subscribe(data => { 
+      // console.log(data)
+      this.products= data
+    })
   }
 
   delProduct(id){
@@ -39,6 +40,7 @@ export class ProductManagerComponent implements OnInit {
   detailProduct(product){
     // return this.detail = this.productsService.detailProduct(product);
     this.productService.getProducts().subscribe(data => {
+      // console.log(data)
       this.products= data
   })
   }
