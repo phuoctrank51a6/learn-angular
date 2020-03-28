@@ -15,7 +15,7 @@ const adminRoutes: Routes =[
     children: [
       { path: '', component: ProductManagerComponent },
       { path: 'add-product', component: ProductAddComponent },
-      { path: 'edit-product', component: EditProductComponent }
+      { path: 'edit-product/:id' ,component: EditProductComponent},
     ]
      },
 ];
