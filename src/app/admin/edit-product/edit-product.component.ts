@@ -39,7 +39,7 @@ export class EditProductComponent implements OnInit {
   updateProduct(){
     // console.log(this.product);
     // this.productService.updateProduct(this.product);
-    this.productService.updateProduct(this.product).subscribe(() => this.router.navigateByUrl('/admin/product-manager'));
+    this.productService.updateProduct(this.product).subscribe(() => this.router.navigateByUrl('/admin'));
   }
 
 }
