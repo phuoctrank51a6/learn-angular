@@ -17,6 +17,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';import { from } from 'rxjs';
 import { AdminModule } from './admin/admin.module';
 import { ClientModule } from './client/client.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -29,15 +30,15 @@ import { ClientModule } from './client/client.module';
     // ProductManagerComponent, 
     ProductAddComponent, 
     EditProductComponent, 
-    DetailProductComponent 
+    DetailProductComponent, NotFoundComponent 
     ],
   imports:      [ 
     BrowserModule, 
     FormsModule, 
-    AppRoutingModule, 
     HttpClientModule, 
     ClientModule,
     AdminModule, 
+    AppRoutingModule, 
   ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

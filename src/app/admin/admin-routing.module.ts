@@ -6,8 +6,13 @@ import {ProductManagerComponent} from './product-manager/product-manager.compone
 import { LayoutComponent } from './layout/layout.component';
 
 const adminRoutes: Routes =[
-  { path: 'product-manager', component: ProductManagerComponent },
-  { path: 'layout', component: LayoutComponent }
+  { 
+    path: 'admin', 
+    component: LayoutComponent,
+    children: [
+      { path: '', component: ProductManagerComponent }
+    ]
+     },
 ];
 
 @NgModule({

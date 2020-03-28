@@ -3,9 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { from } from 'rxjs';
 
 import {ListProductComponent} from './list-product/list-product.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const clientRoutes: Routes =[
-  { path: 'list', component: ListProductComponent }
+  { 
+    path: '', 
+    component: LayoutComponent,
+    children: [
+      {path: '', component:ListProductComponent}
+    ] }
 ];
 
 @NgModule({
