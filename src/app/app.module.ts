@@ -6,8 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
-import { CategoryComponent } from './category/category.component';
+// import { SlideshowComponent } from './client/slideshow/slideshow.component';
+// import { CategoryComponent } from './category/category.component';
 // import { ListProductComponent } from './product/list-product/list-product.component';
 import { ItemProductComponent } from './item-product/item-product.component';
 // import { ProductManagerComponent } from './admin/product-manager/product-manager.component';
@@ -20,6 +20,17 @@ import { ClientModule } from './client/client.module';
 
 
 @NgModule({
+  declarations: [ 
+    AppComponent, 
+    HelloComponent, 
+    // SlideshowComponent, 
+    // CategoryComponent, 
+    ItemProductComponent, 
+    // ProductManagerComponent, 
+    ProductAddComponent, 
+    EditProductComponent, 
+    DetailProductComponent 
+    ],
   imports:      [ 
     BrowserModule, 
     FormsModule, 
@@ -28,17 +39,6 @@ import { ClientModule } from './client/client.module';
     ClientModule,
     AdminModule 
   ],
-  declarations: [ 
-    AppComponent, 
-    HelloComponent, 
-    SlideshowComponent, 
-    CategoryComponent, 
-    ItemProductComponent, 
-    // ProductManagerComponent, 
-    ProductAddComponent, 
-    EditProductComponent, 
-    DetailProductComponent 
-    ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
