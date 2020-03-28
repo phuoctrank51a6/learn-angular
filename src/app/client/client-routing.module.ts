@@ -4,14 +4,14 @@ import { from } from 'rxjs';
 
 import {ListProductComponent} from './list-product/list-product.component';
 
-const productRoutes: Routes =[
+const clientRoutes: Routes =[
   { path: 'list', component: ListProductComponent }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forChild(productRoutes)
+    RouterModule.forChild(clientRoutes)
   ],
   exports: [RouterModule]
 })
-export class ProductRoutingModule { }
+export class ClientRoutingModule { }

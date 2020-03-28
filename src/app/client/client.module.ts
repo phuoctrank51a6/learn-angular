@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { from } from 'rxjs';
 
 import {ListProductComponent} from './list-product/list-product.component';
-import { ProductRoutingModule } from './product-routing.module';
+import { ClientRoutingModule } from './client-routing.module';
 
 
 
@@ -14,7 +14,7 @@ import { ProductRoutingModule } from './product-routing.module';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ClientRoutingModule
   ],
 })
-export class ProductModule { }
+export class ClientModule { }

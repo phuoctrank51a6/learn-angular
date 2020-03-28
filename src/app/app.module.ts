@@ -10,17 +10,35 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { CategoryComponent } from './category/category.component';
 // import { ListProductComponent } from './product/list-product/list-product.component';
 import { ItemProductComponent } from './item-product/item-product.component';
-import { ProductManagerComponent } from './admin/product-manager/product-manager.component';
+// import { ProductManagerComponent } from './admin/product-manager/product-manager.component';
 import { ProductService } from './product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';import { from } from 'rxjs';
-import { ProductModule } from './product/product.module';
+import { AdminModule } from './admin/admin.module';
+import { ClientModule } from './client/client.module';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, ProductModule ],
-  declarations: [ AppComponent, HelloComponent, SlideshowComponent, CategoryComponent, ItemProductComponent, ProductManagerComponent, ProductAddComponent, EditProductComponent, DetailProductComponent ],
+  imports:      [ 
+    BrowserModule, 
+    FormsModule, 
+    AppRoutingModule, 
+    HttpClientModule, 
+    ClientModule,
+    AdminModule 
+  ],
+  declarations: [ 
+    AppComponent, 
+    HelloComponent, 
+    SlideshowComponent, 
+    CategoryComponent, 
+    ItemProductComponent, 
+    // ProductManagerComponent, 
+    ProductAddComponent, 
+    EditProductComponent, 
+    DetailProductComponent 
+    ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
