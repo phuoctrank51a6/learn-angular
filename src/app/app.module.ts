@@ -12,7 +12,7 @@ import { HelloComponent } from './hello.component';
 import { ItemProductComponent } from './item-product/item-product.component';
 // import { ProductManagerComponent } from './admin/product-manager/product-manager.component';
 import { ProductService } from './product.service';
-import { ProductAddComponent } from './product-add/product-add.component';
+// import { ProductAddComponent } from './product-add/product-add.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';import { from } from 'rxjs';
 import { AdminModule } from './admin/admin.module';
@@ -28,7 +28,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     // CategoryComponent, 
     ItemProductComponent, 
     // ProductManagerComponent, 
-    ProductAddComponent, 
+    // ProductAddComponent, 
     EditProductComponent, 
     DetailProductComponent, 
     NotFoundComponent 

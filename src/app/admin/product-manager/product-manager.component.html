@@ -9,7 +9,7 @@
                 <th>image</th>
                 <th>Trạng thái</th>
                 <th>
-                  <a class="btn btn-primary" href="/add-product">Thêm</a>
+                  <a class="btn btn-primary" href="/admin/add-product">Thêm</a>
                 </th>
             </tr>
         </thead>
@@ -22,10 +22,10 @@
                 <td><img height="100px" src="{{product.img}}" alt=""></td>
                 <td>{{(product.status == true)? "Còn hàng" : "Hết hàng"}}</td>
                 <td>
-                <a class="btn btn-info" [routerLink]="['/detail-product', product.id]">
+                <a class="btn btn-info" [routerLink]="['/admin/detail-product', product.id]">
                   Chi tiết
                 </a>
-                <a class="btn btn-warning" [routerLink]="['/edit-product', product.id]">
+                <a class="btn btn-warning" [routerLink]="['/admin/edit-product', product.id]">
                   Sửa
                 </a>
                     <button class="btn btn-danger" (click)="delProduct(product.id)">Delete</button>
