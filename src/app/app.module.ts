@@ -37,7 +37,7 @@ import { ClientModule } from './client/client.module';
     AppRoutingModule, 
     HttpClientModule, 
     ClientModule,
-    AdminModule 
+    AdminModule, 
   ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
