@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../Product';
-import { ProductService } from '../product.service';
+import { Product } from '../../Product';
+import { ProductService } from '../../product.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -29,10 +29,10 @@ export class DetailProductComponent implements OnInit {
     // this.productService.detailProduct();
     this.route.params.subscribe(data => {
       let {id} = data;
-      console.log(id);
+      // console.log(id); 
       this.productService.detailProduct(id).subscribe(data => 
         // console.log(data)  
-        this.product = data
+        this.product = data 
       );
     }) 
   }

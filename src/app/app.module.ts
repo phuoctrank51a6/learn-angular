@@ -14,7 +14,8 @@ import { ItemProductComponent } from './item-product/item-product.component';
 import { ProductService } from './product.service';
 // import { ProductAddComponent } from './product-add/product-add.component';
 // import { EditProductComponent } from './edit-product/edit-product.component';
-import { DetailProductComponent } from './detail-product/detail-product.component';import { from } from 'rxjs';
+// import { DetailProductComponent } from './detail-product/detail-product.component';
+import { from } from 'rxjs';
 import { AdminModule } from './admin/admin.module';
 import { ClientModule } from './client/client.module';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -30,7 +31,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     // ProductManagerComponent, 
     // ProductAddComponent, 
     // EditProductComponent, 
-    DetailProductComponent, 
+    // DetailProductComponent, 
     NotFoundComponent 
     ],
   imports:      [ 

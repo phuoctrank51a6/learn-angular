@@ -8,6 +8,7 @@ import { ClientRoutingModule } from './client-routing.module';
 import { CategoryComponent } from './category/category.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { DetailProductComponent } from './detail-product/detail-product.component';
 
 
 
@@ -16,7 +17,8 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     ListProductComponent, 
     LayoutComponent,
     SlideshowComponent,
-    CategoryComponent
+    CategoryComponent,
+    DetailProductComponent
   ],
   imports: [
     CommonModule,

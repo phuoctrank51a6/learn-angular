@@ -43,7 +43,7 @@
 width="18" height="18"
 viewBox="0 0 172 172"
 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M5.9125,6.88c-0.1075,0.02688 -0.215,0.06719 -0.3225,0.1075c-0.04031,0 -0.06719,-0.01344 -0.1075,0c-0.06719,0.02688 -0.14781,0.06719 -0.215,0.1075c-3.02344,0.72563 -5.2675,3.42656 -5.2675,6.665c0,3.80281 3.07719,6.88 6.88,6.88c3.80281,0 6.88,-3.07719 6.88,-6.88h16.0175c4.28656,0 6.51719,0.88688 8.17,2.365c1.62594,1.46469 2.94281,3.91031 4.085,7.74v0.1075l27.52,110.94c1.03469,3.93719 1.96188,7.98188 4.8375,11.2875c1.1825,1.37063 2.70094,2.48594 4.515,3.3325c-1.98875,2.39188 -3.225,5.38844 -3.225,8.7075c0,7.56531 6.19469,13.76 13.76,13.76c7.56531,0 13.76,-6.19469 13.76,-13.76c0,-2.52625 -0.73906,-4.8375 -1.935,-6.88h21.07c-1.19594,2.0425 -1.935,4.35375 -1.935,6.88c0,7.56531 6.19469,13.76 13.76,13.76c7.56531,0 13.76,-6.19469 13.76,-13.76c0,-3.53406 -1.43781,-6.69187 -3.655,-9.1375c0.38969,-1.04812 0.22844,-2.23062 -0.40312,-3.14437c-0.645,-0.92719 -1.69313,-1.47813 -2.82188,-1.47813h-52.5675c-5.29437,0 -7.36375,-1.12875 -8.815,-2.795c-1.43781,-1.63937 -2.41875,-4.54187 -3.44,-8.385v-0.1075l-2.365,-9.3525h63.1025c1.43781,0 2.72781,-0.90031 3.225,-2.2575l24.725,-65.36c0.38969,-1.04812 0.22844,-2.23062 -0.40312,-3.14437c-0.645,-0.92719 -1.69313,-1.47813 -2.82188,-1.47813h-105.6725l-7.31,-29.3475c0,-0.06719 0,-0.14781 0,-0.215c-1.31687,-4.43437 -3.01,-8.2775 -6.1275,-11.0725c-3.1175,-2.795 -7.45781,-4.085 -12.7925,-4.085h-22.8975c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM57.7275,58.48h99.0075l-22.145,58.48h-62.35zM106.3175,65.2525c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v13.76h-13.76c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0c-1.89469,0.17469 -3.29219,1.86781 -3.1175,3.7625c0.17469,1.89469 1.86781,3.29219 3.7625,3.1175h13.76v13.76c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-13.76h13.76c1.23625,0.01344 2.39188,-0.63156 3.02344,-1.70656c0.61813,-1.075 0.61813,-2.39187 0,-3.46687c-0.63156,-1.075 -1.78719,-1.72 -3.02344,-1.70656h-13.76v-13.76c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719zM89.44,151.36c3.84313,0 6.88,3.03688 6.88,6.88c0,3.84313 -3.03687,6.88 -6.88,6.88c-3.84312,0 -6.88,-3.03687 -6.88,-6.88c0,-3.84312 3.03688,-6.88 6.88,-6.88zM134.16,151.36c3.84313,0 6.88,3.03688 6.88,6.88c0,3.84313 -3.03687,6.88 -6.88,6.88c-3.84312,0 -6.88,-3.03687 -6.88,-6.88c0,-3.84312 3.03688,-6.88 6.88,-6.88z"></path></g></g></svg> Add to Cart</button>
-                        <div class="text-center"><a class="nav-link-style font-size-ms" href="#quick-view" data-toggle="modal"><img src="https://img.icons8.com/material-outlined/18/000000/visible.png"/> Quick view</a></div>
+                        <div class="text-center"><a class="nav-link-style font-size-ms"   [routerLink]="['/product-detail', product.id]" data-toggle="modal"><img src="https://img.icons8.com/material-outlined/18/000000/visible.png"/> Quick view</a></div>
                     </div>
                 </div>
                 <hr class="d-sm-none">
@@ -51,46 +51,3 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         </div>
         <div class="text-center pt-3"><a class="btn btn-outline-accent" href="shop-grid-ls.html">More products<i class="czi-arrow-right ml-1"></i></a></div>
     </section>
-
-<div class="row">
-    <!-- <app-item-product ngClass="col-lg-4 col-md-6 mb-4"></app-item-product>
-    <app-item-product ngClass="col-lg-4 col-md-6 mb-4"></app-item-product>
-    <app-item-product ngClass="col-lg-4 col-md-6 mb-4"></app-item-product> -->
-    <div *ngFor="let product of products" class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <!-- cách 1 -->
-            <!-- <a href="#"><img class="card-img-top" src="{{ product.img }}" alt=""></a> -->
-            <!-- Cách 2 -->
-            <a href="#"><img class="card-img-top" [src]="product.img" alt="" /></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">{{ product.name }}</a>
-                </h4>
-                <h5>{{ product.price }}</h5>
-                <p class="card-text">{{ product.desc }}</p>
-                <p class="cart-text">{{ product.status ? "Còn hàng" : "Hết hàng" }}</p>
-                <!-- cấu trúc event
-                - (event-name)="method($event) -->
-                <button class="btn btn-primary">Mua hàng</button>
-                <a class="btn btn-success" [routerLink]="['/detail-product', product.id]">
-                  Chi tiết
-                </a>
-                <button class="btn btn-danger" (click)="removeIttem(product.id)">Xóa</button>
-                <!-- cách 1 -->
-                <!-- <input type="text " (keyup)="changeTitle($event) "> -->
-                <!-- cách 2 -->
-                <!-- <form action=" ">
-                    <input type="text " [(ngModel)]="product.name" name="name " />
-                    <input type="text " [(ngModel)]="product.desc" name="desc " />
-                </form> -->
-                <!-- <input type="text " [(ngModel)]="product.name "> -->
-            </div>
-            <div class="card-footer ">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-</div>
-<div *ngIf="selected">
-    {{selected.name}}
-</div>

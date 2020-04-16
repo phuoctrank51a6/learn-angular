@@ -1,0 +1,596 @@
+
+    <!-- Page Title (Shop)-->
+    <div class="page-title-overlap bg-dark pt-4">
+      <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+        <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
+              <li class="breadcrumb-item"><a class="text-nowrap" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="20" height="20"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g transform="translate(25.8,25.8) scale(0.7,0.7)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,13.94141l-3.86328,3.69531l-69.875,69.875l7.72656,7.72656l6.88672,-6.88672v62.14844h48.375v-53.75h21.5v53.75h48.375v-62.14844l6.88672,6.88672l7.72656,-7.72656l-69.875,-69.875zM86,29.22656l48.375,48.375v62.14844h-26.875v-53.75h-43v53.75h-26.875v-62.14844z"></path></g></g></g></svg> Home</a></li>
+            </ol>
+          </nav>
+        </div>
+        <div class="order-lg-1 pr-lg-4 text-center text-lg-left">
+          <h1 class="h3 text-light mb-0">{{ product.name }}
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container">
+      <!-- Gallery + details-->
+      <div class="bg-light box-shadow-lg rounded-lg px-4 py-3 mb-5">
+        <div class="px-lg-3">
+          <div class="row">
+            <!-- Product gallery-->
+            <div class="col-lg-7 pr-lg-0 pt-lg-4">
+              <div class="cz-product-gallery">
+                <div class="cz-preview order-sm-2">
+                  <div><img src="{{ product.img }}" alt="Product image">
+                  </div>
+                </div>
+                <div class="cz-thumblist order-sm-1"><a class="cz-thumblist-item active" href="#first"><img src="{{ product.img }}" alt="Product thumb"></a><a class="cz-thumblist-item" href="#second"><img src="{{ product.img }}" alt="Product thumb"></a><a class="cz-thumblist-item" href="#third"><img src="{{ product.img }}" alt="Product thumb"></a><a class="cz-thumblist-item" href="#fourth"><img src="{{ product.img }}" alt="Product thumb"></a></div>
+              </div>
+            </div>
+            <!-- Product details-->
+            <div class="col-lg-5 pt-4 pt-lg-0">
+              <div class="product-details ml-auto pb-3">
+                <div class="d-flex justify-content-between align-items-center mb-2"><a href="#reviews" data-scroll>
+                    <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                    </div><span class="d-inline-block font-size-sm text-body align-middle mt-1 ml-1">74 Reviews</span></a>
+                  <button class="btn-wishlist mr-0 mr-lg-n3" type="button" data-toggle="tooltip" title="Add to wishlist"><img src="https://img.icons8.com/ios/18/000000/like.png"/></button>
+                </div>
+                <div class="mb-3"><span class="h3 font-weight-normal text-accent mr-1">{{product.price}}</span>
+                  <del class="text-muted font-size-lg mr-3">$25.<small>00</small></del><span class="badge badge-danger badge-shadow align-middle mt-n2">Sale</span>
+                </div>
+                <div class="font-size-sm mb-4"><span class="text-heading font-weight-medium mr-1">Color:</span><span class="text-muted" id="colorOption">Red/Dark blue/White</span></div>
+                <div class="position-relative mr-n4 mb-3">
+                  <div class="custom-control custom-option custom-control-inline mb-2">
+                    <input class="custom-control-input" type="radio" name="color" id="color1" data-label="colorOption" value="Red/Dark blue/White" checked>
+                    <label class="custom-option-label rounded-circle" for="color1"><span class="custom-option-color rounded-circle" style="background-image: url(img/shop/single/color-opt-1.png)"></span></label>
+                  </div>
+                  <div class="custom-control custom-option custom-control-inline mb-2">
+                    <input class="custom-control-input" type="radio" name="color" id="color2" data-label="colorOption" value="Beige/White/Dark grey">
+                    <label class="custom-option-label rounded-circle" for="color2"><span class="custom-option-color rounded-circle" style="background-image: url(img/shop/single/color-opt-2.png)"></span></label>
+                  </div>
+                  <div class="custom-control custom-option custom-control-inline mb-2">
+                    <input class="custom-control-input" type="radio" name="color" id="color3" data-label="colorOption" value="Dark grey/White/Orange">
+                    <label class="custom-option-label rounded-circle" for="color3"><span class="custom-option-color rounded-circle" style="background-image: url(img/shop/single/color-opt-3.png)"></span></label>
+                  </div>
+                  <div class="product-badge product-available mt-n1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="20" height="20"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,0.33594c-6.81464,0 -12.9724,3.24096 -21.49328,7.71984c-10.97704,5.77576 -26.01946,13.67938 -51.48578,19.26938l-2.70094,0.59125v2.76812c0,104.7996 73.49243,139.94022 74.23547,140.28078l1.51844,0.69875l1.48485,-0.75922c0.7396,-0.3784 74.12125,-38.91231 74.12125,-140.22031v-2.76812l-2.70094,-0.59125c-25.46632,-5.59 -40.50874,-13.49361 -51.48578,-19.26937c-8.52088,-4.47888 -14.67864,-7.71984 -21.49328,-7.71984zM86.17469,44.44453l8.18344,21.47984l0.78609,2.08281l2.22391,0.13438l23.03187,1.35719c0.00688,0.10664 -0.02558,0.18635 -0.08063,0.26203l-17.69047,14.29078l-1.73344,1.3975l0.56438,2.15l5.88562,22.38015l-19.23578,-12.71187l-1.87453,-1.22953l-1.88125,1.20937l-19.10812,12.28188c-0.1204,0.05848 -0.25273,0.12653 -0.36281,0.17469c-0.0172,-0.00688 -0.03655,-0.01999 -0.05375,-0.02688c-0.02064,-0.04128 -0.03671,-0.0739 -0.04703,-0.0739l-0.00672,0.00672l5.84531,-22.36l0.55765,-2.12984l-1.69312,-1.3975l-17.54266,-14.44531l-0.13437,-0.11422l22.91765,-1.37063l2.21719,-0.12765l0.79281,-2.08281l7.94828,-20.855c0.18576,-0.13072 0.36319,-0.23059 0.49047,-0.28219z"></path></g></g></svg> Product available</div>
+                </div>
+                <form class="mb-grid-gutter" method="post">
+                  <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center pb-1">
+                      <label class="font-weight-medium" for="product-size">Size:</label><a class="nav-link-style font-size-sm" href="#size-chart" data-toggle="modal"><i class="czi-ruler lead align-middle mr-1 mt-n1"></i>Size guide</a>
+                    </div>
+                    <select class="custom-select" required id="product-size">
+                      <option value="">Select size</option>
+                      <option value="xs">XS</option>
+                      <option value="s">S</option>
+                      <option value="m">M</option>
+                      <option value="l">L</option>
+                      <option value="xl">XL</option>
+                    </select>
+                  </div>
+                  <div class="form-group d-flex align-items-center">
+                    <select class="custom-select mr-3" style="width: 5rem;">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <button class="btn btn-primary btn-shadow btn-block" type="submit"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="20" height="20"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M85.88802,7.06868c-3.95253,0.06178 -7.10881,3.312 -7.05469,7.26465v14.33333h-14.33333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h14.33333v14.33333c-0.03655,2.58456 1.32136,4.98858 3.55376,6.29153c2.2324,1.30295 4.99342,1.30295 7.22582,0c2.2324,-1.30295 3.59031,-3.70697 3.55376,-6.29153v-14.33333h14.33333c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376h-14.33333v-14.33333c0.02653,-1.93715 -0.73227,-3.80254 -2.10349,-5.17112c-1.37122,-1.36858 -3.23806,-2.12378 -5.17516,-2.09353zM22.0179,14.36133l-7.68457,0.06999c-2.57957,-0.00591 -4.96334,1.37482 -6.24173,3.61535c-1.27839,2.24053 -1.25418,4.99519 0.06339,7.2129c1.31757,2.21771 3.72524,3.55633 6.30431,3.50508l7.64258,-0.06999h0.014l23.37565,56.11556c-0.05302,0.34278 -0.08109,0.68896 -0.08398,1.03581l-8.27246,13.21354c-6.00818,9.59435 1.29744,22.77376 12.61165,22.77376h79.25326c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376h-79.25326c-0.79745,0 -0.8894,-0.15716 -0.46191,-0.83985l8.42643,-13.49349h53.52604c5.1944,0 10.0046,-2.83223 12.52767,-7.37663l29.47851,-53.06413c1.2784,-2.22654 1.26821,-4.96681 -0.02671,-7.18378c-1.29492,-2.21697 -3.67675,-3.57198 -6.24413,-3.55222c-2.61955,0.02169 -5.01859,1.47077 -6.25683,3.7793l-29.47852,53.06413h-52.71419l-23.17969,-55.66764c-2.23078,-5.34816 -7.52108,-8.83296 -13.31152,-8.80436zM50.16667,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM121.83333,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333z"></path></g></g></svg> Add to Cart</button>
+                  </div>
+                </form>
+                <!-- Product panels-->
+                <div class="accordion mb-4" id="productPanels">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="accordion-heading"><a href="#productInfo" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="productInfo"><img src="https://img.icons8.com/material-outlined/20/000000/box-important.png"/> Product info<span class="accordion-indicator"><img src="https://img.icons8.com/material/24/000000/expand-arrow--v1.png"/></span></a></h3>
+                    </div>
+                    <div class="collapse show" id="productInfo" data-parent="#productPanels">
+                      <div class="card-body">
+                        {{product.desc}}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="accordion-heading"><a class="collapsed" href="#shippingOptions" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="shippingOptions"><i class="czi-delivery text-muted lead align-middle mt-n1 mr-2"></i>Shipping options<span class="accordion-indicator"><i data-feather="chevron-up"></i></span></a></h3>
+                    </div>
+                    <div class="collapse" id="shippingOptions" data-parent="#productPanels">
+                      <div class="card-body font-size-sm">
+                        <div class="d-flex justify-content-between border-bottom pb-2">
+                          <div>
+                            <div class="font-weight-semibold text-dark">Courier</div>
+                            <div class="font-size-sm text-muted">2 - 4 days</div>
+                          </div>
+                          <div>$26.50</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                          <div>
+                            <div class="font-weight-semibold text-dark">Local shipping</div>
+                            <div class="font-size-sm text-muted">up to one week</div>
+                          </div>
+                          <div>$10.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                          <div>
+                            <div class="font-weight-semibold text-dark">Flat rate</div>
+                            <div class="font-size-sm text-muted">5 - 7 days</div>
+                          </div>
+                          <div>$33.85</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                          <div>
+                            <div class="font-weight-semibold text-dark">UPS ground shipping</div>
+                            <div class="font-size-sm text-muted">4 - 6 days</div>
+                          </div>
+                          <div>$18.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2">
+                          <div>
+                            <div class="font-weight-semibold text-dark">Local pickup from store</div>
+                            <div class="font-size-sm text-muted">&mdash;</div>
+                          </div>
+                          <div>$0.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="accordion-heading"><a class="collapsed" href="#localStore" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="localStore"><i class="czi-location text-muted font-size-lg align-middle mt-n1 mr-2"></i>Find in local store<span class="accordion-indicator"><i data-feather="chevron-up"></i></span></a></h3>
+                    </div>
+                    <div class="collapse" id="localStore" data-parent="#productPanels">
+                      <div class="card-body">
+                        <select class="custom-select">
+                          <option value>Select your country</option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Belgium">Belgium</option>
+                          <option value="France">France</option>
+                          <option value="Germany">Germany</option>
+                          <option value="Spain">Spain</option>
+                          <option value="UK">United Kingdom</option>
+                          <option value="USA">USA</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sharing-->
+                <h6 class="d-inline-block align-middle font-size-base my-2 mr-2">Share:</h6><a class="share-btn sb-twitter mr-2 my-2" href="#"><i class="czi-twitter"></i>Twitter</a><a class="share-btn sb-instagram mr-2 my-2" href="#"><i class="czi-instagram"></i>Instagram</a><a class="share-btn sb-facebook my-2" href="#"><i class="czi-facebook"></i>Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product description section 1-->
+      <div class="row align-items-center py-md-3">
+        <div class="col-lg-5 col-md-6 offset-lg-1 order-md-2"><img class="d-block rounded-lg" src="img/shop/single/prod-img.jpg" alt="Image"></div>
+        <div class="col-lg-4 col-md-6 offset-lg-1 py-4 order-md-1">
+          <h2 class="h3 mb-4 pb-2">High quality materials</h2>
+          <h6 class="font-size-base mb-3">Soft cotton blend</h6>
+          <p class="font-size-sm text-muted pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.</p>
+          <h6 class="font-size-base mb-3">Washing instructions</h6>
+          <ul class="nav nav-tabs mb-3" role="tablist">
+            <li class="nav-item"><a class="nav-link active" href="#wash" data-toggle="tab" role="tab"><i class="czi-wash font-size-xl"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#bleach" data-toggle="tab" role="tab"><i class="czi-bleach font-size-xl"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#hand-wash" data-toggle="tab" role="tab"><i class="czi-hand-wash font-size-xl"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#ironing" data-toggle="tab" role="tab"><i class="czi-ironing font-size-xl"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#dry-clean" data-toggle="tab" role="tab"><i class="czi-dry-clean font-size-xl"></i></a></li>
+          </ul>
+          <div class="tab-content text-muted font-size-sm">
+            <div class="tab-pane fade show active" id="wash" role="tabpanel">30° mild machine washing</div>
+            <div class="tab-pane fade" id="bleach" role="tabpanel">Do not use any bleach</div>
+            <div class="tab-pane fade" id="hand-wash" role="tabpanel">Hand wash normal (30°)</div>
+            <div class="tab-pane fade" id="ironing" role="tabpanel">Low temperature ironing</div>
+            <div class="tab-pane fade" id="dry-clean" role="tabpanel">Do not dry clean</div>
+          </div>
+        </div>
+      </div>
+      <!-- Product description section 2-->
+      <div class="row align-items-center py-4 py-lg-5">
+        <div class="col-lg-5 col-md-6 offset-lg-1"><img class="d-block rounded-lg" src="img/shop/single/prod-map.png" alt="Map"></div>
+        <div class="col-lg-4 col-md-6 offset-lg-1 py-4">
+          <h2 class="h3 mb-4 pb-2">Where is it made?</h2>
+          <h6 class="font-size-base mb-3">Apparel Manufacturer, Ltd.</h6>
+          <p class="font-size-sm text-muted pb-2">​Sam Tower, 6 Road No 32, Dhaka 1875, Bangladesh</p>
+          <div class="d-flex mb-2">
+            <div class="mr-4 pr-2 text-center">
+              <h4 class="h2 text-accent mb-1">3258</h4>
+              <p>Workers</p>
+            </div>
+            <div class="mr-4 pr-2 text-center">
+              <h4 class="h2 text-accent mb-1">43%</h4>
+              <p>Female</p>
+            </div>
+            <div class="text-center">
+              <h4 class="h2 text-accent mb-1">57%</h4>
+              <p>Male</p>
+            </div>
+          </div>
+          <h6 class="font-size-base mb-3">Factory information</h6>
+          <p class="font-size-sm text-muted pb-md-2">​Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Reviews-->
+    <div class="border-top border-bottom my-lg-3 py-5">
+      <div class="container pt-md-2" id="reviews">
+        <div class="row pb-3">
+          <div class="col-lg-4 col-md-5">
+            <h2 class="h3 mb-4">74 Reviews</h2>
+            <div class="star-rating mr-2"><i class="czi-star-filled font-size-sm text-accent mr-1"></i><i class="czi-star-filled font-size-sm text-accent mr-1"></i><i class="czi-star-filled font-size-sm text-accent mr-1"></i><i class="czi-star-filled font-size-sm text-accent mr-1"></i><i class="czi-star font-size-sm text-muted mr-1"></i></div><span class="d-inline-block align-middle">4.1 Overall rating</span>
+            <p class="pt-3 font-size-sm text-muted">58 out of 74 (77%)<br>Customers recommended this product</p>
+          </div>
+          <div class="col-lg-8 col-md-7">
+            <div class="d-flex align-items-center mb-2">
+              <div class="text-nowrap mr-3"><span class="d-inline-block align-middle text-muted">5</span><i class="czi-star-filled font-size-xs ml-1"></i></div>
+              <div class="w-100">
+                <div class="progress" style="height: 4px;">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><span class="text-muted ml-3">43</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <div class="text-nowrap mr-3"><span class="d-inline-block align-middle text-muted">4</span><i class="czi-star-filled font-size-xs ml-1"></i></div>
+              <div class="w-100">
+                <div class="progress" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 27%; background-color: #a7e453;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><span class="text-muted ml-3">16</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <div class="text-nowrap mr-3"><span class="d-inline-block align-middle text-muted">3</span><i class="czi-star-filled font-size-xs ml-1"></i></div>
+              <div class="w-100">
+                <div class="progress" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 17%; background-color: #ffda75;" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><span class="text-muted ml-3">9</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <div class="text-nowrap mr-3"><span class="d-inline-block align-middle text-muted">2</span><i class="czi-star-filled font-size-xs ml-1"></i></div>
+              <div class="w-100">
+                <div class="progress" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 9%; background-color: #fea569;" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><span class="text-muted ml-3">4</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="text-nowrap mr-3"><span class="d-inline-block align-middle text-muted">1</span><i class="czi-star-filled font-size-xs ml-1"></i></div>
+              <div class="w-100">
+                <div class="progress" style="height: 4px;">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 4%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><span class="text-muted ml-3">2</span>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 pb-4 mb-3">
+        <div class="row">
+          <!-- Reviews list-->
+          <div class="col-md-7">
+            <div class="d-flex justify-content-end pb-4">
+              <div class="form-inline flex-nowrap">
+                <label class="text-muted text-nowrap mr-2 d-none d-sm-block" for="sort-reviews">Sort by:</label>
+                <select class="custom-select custom-select-sm" id="sort-reviews">
+                  <option>Newest</option>
+                  <option>Oldest</option>
+                  <option>Popular</option>
+                  <option>High rating</option>
+                  <option>Low rating</option>
+                </select>
+              </div>
+            </div>
+            <!-- Review-->
+            <div class="product-review pb-4 mb-4 border-bottom">
+              <div class="d-flex mb-3">
+                <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" src="img/shop/reviews/01.jpg" alt="Rafael Marquez"/>
+                  <div class="media-body pl-3">
+                    <h6 class="font-size-sm mb-0">Rafael Marquez</h6><span class="font-size-ms text-muted">June 28, 2019</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                  <div class="font-size-ms text-muted">83% of users found this review helpful</div>
+                </div>
+              </div>
+              <p class="font-size-md mb-2">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est...</p>
+              <ul class="list-unstyled font-size-ms pt-1">
+                <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>Consequuntur magni, voluptatem sequi, tempora</li>
+                <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>Architecto beatae, quis autem</li>
+              </ul>
+              <div class="text-nowrap">
+                <button class="btn-like" type="button">15</button>
+                <button class="btn-dislike" type="button">3</button>
+              </div>
+            </div>
+            <!-- Review-->
+            <div class="product-review pb-4 mb-4 border-bottom">
+              <div class="d-flex mb-3">
+                <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" src="img/shop/reviews/02.jpg" alt="Barbara Palson"/>
+                  <div class="media-body pl-3">
+                    <h6 class="font-size-sm mb-0">Barbara Palson</h6><span class="font-size-ms text-muted">May 17, 2019</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="star-rating">
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                  <div class="font-size-ms text-muted">99% of users found this review helpful</div>
+                </div>
+              </div>
+              <p class="font-size-md mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <ul class="list-unstyled font-size-ms pt-1">
+                <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>Consequuntur magni, voluptatem sequi, tempora</li>
+                <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>Architecto beatae, quis autem</li>
+              </ul>
+              <div class="text-nowrap">
+                <button class="btn-like" type="button">34</button>
+                <button class="btn-dislike" type="button">1</button>
+              </div>
+            </div>
+            <!-- Review-->
+            <div class="product-review pb-4 mb-4 border-bottom">
+              <div class="d-flex mb-3">
+                <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" src="img/shop/reviews/03.jpg" alt="Daniel Adams"/>
+                  <div class="media-body pl-3">
+                    <h6 class="font-size-sm mb-0">Daniel Adams</h6><span class="font-size-ms text-muted">May 8, 2019</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                  <div class="font-size-ms text-muted">75% of users found this review helpful</div>
+                </div>
+              </div>
+              <p class="font-size-md mb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+              <ul class="list-unstyled font-size-ms pt-1">
+                <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>Consequuntur magni, voluptatem sequi</li>
+                <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>Architecto beatae,  quis autem, voluptatem sequ</li>
+              </ul>
+              <div class="text-nowrap">
+                <button class="btn-like" type="button">26</button>
+                <button class="btn-dislike" type="button">9</button>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-outline-accent" type="button"><i class="czi-reload mr-2"></i>Load more reviews</button>
+            </div>
+          </div>
+          <!-- Leave review form-->
+          <div class="col-md-5 mt-2 pt-4 mt-md-0 pt-md-0">
+            <div class="bg-secondary py-grid-gutter px-grid-gutter rounded-lg">
+              <h3 class="h4 pb-2">Write a review</h3>
+              <form class="needs-validation" method="post" novalidate>
+                <div class="form-group">
+                  <label for="review-name">Your name<span class="text-danger">*</span></label>
+                  <input class="form-control" type="text" required id="review-name">
+                  <div class="invalid-feedback">Please enter your name!</div><small class="form-text text-muted">Will be displayed on the comment.</small>
+                </div>
+                <div class="form-group">
+                  <label for="review-email">Your email<span class="text-danger">*</span></label>
+                  <input class="form-control" type="email" required id="review-email">
+                  <div class="invalid-feedback">Please provide valid email address!</div><small class="form-text text-muted">Authentication only - we won't spam you.</small>
+                </div>
+                <div class="form-group">
+                  <label for="review-rating">Rating<span class="text-danger">*</span></label>
+                  <select class="custom-select" required id="review-rating">
+                    <option value="">Choose rating</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose rating!</div>
+                </div>
+                <div class="form-group">
+                  <label for="review-text">Review<span class="text-danger">*</span></label>
+                  <textarea class="form-control" rows="6" required id="review-text"></textarea>
+                  <div class="invalid-feedback">Please write a review!</div><small class="form-text text-muted">Your review must be at least 50 characters.</small>
+                </div>
+                <div class="form-group">
+                  <label for="review-pros">Pros</label>
+                  <textarea class="form-control" rows="2" placeholder="Separated by commas" id="review-pros"></textarea>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="review-cons">Cons</label>
+                  <textarea class="form-control" rows="2" placeholder="Separated by commas" id="review-cons"></textarea>
+                </div>
+                <button class="btn btn-primary btn-shadow btn-block" type="submit">Submit a Review</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product carousel (Style with)-->
+    <div class="container pt-5">
+      <h2 class="h3 text-center pb-4">Style with</h2>
+      <div class="cz-carousel cz-controls-static cz-controls-outside">
+        <div class="cz-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/14.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Jeans</a>
+                <h3 class="product-title font-size-sm"><a href="#">Slim Taper Fit Jeans</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$58.<small>99</small></span></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static"><span class="badge badge-danger badge-shadow">Sale</span>
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/17.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s T-shirts</a>
+                <h3 class="product-title font-size-sm"><a href="#">Cotton T-shirt Regular Fit</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$9.<small>50</small></span>
+                    <del class="font-size-sm text-muted">$11.<small>50</small></del>
+                  </div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/18.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Shoes</a>
+                <h3 class="product-title font-size-sm"><a href="#">Men’s Leather Keds</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$64.<small>99</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/19.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s T-shirts</a>
+                <h3 class="product-title font-size-sm"><a href="#">3 Color Collection of T-shirts</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$27.<small>99</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/13.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s T-shirts</a>
+                <h3 class="product-title font-size-sm"><a href="#">Cotton Polo Regular Fit</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$13.<small>50</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product carousel (You may also like)-->
+    <div class="container py-5 my-md-3">
+      <h2 class="h3 text-center pb-4">You may also like</h2>
+      <div class="cz-carousel cz-controls-static cz-controls-outside">
+        <div class="cz-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/20.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
+                <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$24.<small>99</small></span></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/21.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
+                <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$26.<small>99</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/22.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
+                <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$24.<small>99</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/23.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
+                <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$24.<small>99</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div>
+            <div class="card product-card card-static">
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="#"><img src="img/shop/catalog/24.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
+                <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price text-accent">$25.<small>00</small></div>
+                  <div class="star-rating"><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/><img src="https://img.icons8.com/color/20/000000/filled-star.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                              <img src="https://img.icons8.com/color/20/000000/star--v1.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
