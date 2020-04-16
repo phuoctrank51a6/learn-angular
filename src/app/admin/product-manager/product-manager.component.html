@@ -1,14 +1,10 @@
 
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-          <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Danh sách sản phẩm</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -40,7 +36,7 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                    <tr *ngFor="let product of products">
+                    <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
                       <td> {{ product.id }} </td>
                       <td> {{ product.name }} </td>
                       <td> {{ product.price }} </td>
@@ -64,6 +60,7 @@
           </div>
 
         </div>
+
     <div *ngIf="detail">
       <h3 class="text-primary">Chi tiết sản phẩm</h3>
       <p>Tên sản phẩm: <b class="text-danger">{{detail.name}}</b> </p>
